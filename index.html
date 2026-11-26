@@ -370,12 +370,16 @@
             font-weight: 600;
             color: #e0f2fe;
             overflow: hidden;
+            width: 100%;
+            aspect-ratio: 16 / 9;
         }
         
         .project-thumb img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: top center;
+            display: block;
         }
         
         .project-body {
@@ -634,33 +638,35 @@
                 <button class="filter-btn active" data-filter="all">Semua</button>
                 <button class="filter-btn" data-filter="landing">Landing Page</button>
                 <button class="filter-btn" data-filter="webapp">Web App JS</button>
-            </div>
 
-            <div class="projects-grid">
-                <!-- Proyek 1 -->
-                <article class="project-card" data-category="landing">
-                    <div class="project-thumb">Thumbnail Proyek 1</div>
-                    <div class="project-body">
-                        <span class="project-cat">Landing Page</span>
-                        <h3>Nama Proyek Pertama</h3>
-                        <p>Deskripsi singkat proyek, fitur utama seperti tata letak responsif, kartu informasi, dan tombol aksi.</p>
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>Bootstrap</span>
+
+                <div class="projects-grid">
+                    <!-- Proyek 1 -->
+                    <article class="project-card" data-category="webapp">
+                        <div class="project-thumb">
+                            <img src="projek1.png" alt="ServisKu - Pengingat Servis Motor">
                         </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank">Live Demo ↗</a>
-                            <a href="#" target="_blank">Source Code</a>
+                        <div class="project-body">
+                            <span class="project-cat">Web App JS</span>
+                            <h3>ServisKu - Pengingat Servis Motor</h3>
+                            <p>Aplikasi web MVP untuk pencatatan odometer dan pengingat jadwal ganti oli otomatis berbasis HTML, CSS, dan JavaScript.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://agustianyoga44-bot.github.io/ServisKu/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                <a href="https://github.com/agustianyoga44-bot/ServisKu" target="_blank" rel="noopener noreferrer">Source Code</a>
+                            </div>
                         </div>
-                    </div>
+                </div>
                 </article>
-
                 <!-- Proyek 2 -->
                 <article class="project-card" data-category="webapp">
                     <div class="project-thumb">Thumbnail Proyek 2</div>
                     <div class="project-body">
-                        <span class="project-cat">Web App JS</span>
+                        <span class="project-cat">Ayo diorder</span>
                         <h3>Nama Aplikasi Interaktif</h3>
                         <p>Aplikasi berbasis browser menggunakan JavaScript untuk perhitungan otomatis, filter data, atau penyimpanan lokal.</p>
                         <div class="project-tech">
